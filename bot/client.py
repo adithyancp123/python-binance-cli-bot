@@ -16,9 +16,9 @@ def get_client() -> Client:
         ValueError: If API keys are missing.
         Exception: If initialization fails.
     """
-    if not BINANCE_API_KEY or not BINANCE_API_SECRET:
-        logger.error("Authentication failed: API keys not found in environment variables.")
-        raise ValueError("BINANCE_API_KEY and BINANCE_API_SECRET must be set in the .env file.")
+    if not BINANCE_API_KEY or not BINANCE_API_SECRET or "your_testnet_api_key_here" in BINANCE_API_KEY:
+        logger.error("Authentication failed: API keys not found or default template values detected.")
+        raise ValueError("MissingCredentials")
         
     try:
         client = Client(BINANCE_API_KEY, BINANCE_API_SECRET, testnet=BINANCE_TESTNET)

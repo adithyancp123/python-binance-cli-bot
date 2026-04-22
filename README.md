@@ -45,6 +45,23 @@ graph TD;
    ```
    Add your Testnet `BINANCE_API_KEY` and `BINANCE_API_SECRET` to the `.env` file.
 
+## ⚡ Quick Start in 30 Seconds
+
+1. **Verify Environment:**
+   ```bash
+   python cli.py doctor
+   ```
+2. **Configure `.env`:** (The bot will auto-create the template on first run!)
+   Add your Testnet API keys to `.env`.
+3. **Run Demo Mode (Safe Test):**
+   ```bash
+   python cli.py demo -s BTCUSDT -d BUY -t MARKET -q 0.001
+   ```
+4. **Place Real Order:**
+   ```bash
+   python cli.py order -s BTCUSDT -d BUY -t MARKET -q 0.001
+   ```
+
 ---
 
 ## 💻 Usage & Examples
