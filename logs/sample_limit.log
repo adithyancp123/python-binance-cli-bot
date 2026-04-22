@@ -1,0 +1,3 @@
+[2026-04-22 17:05:12] [INFO] [bot] - Initialized Binance Futures Client (Testnet: True)
+[2026-04-22 17:05:12] [INFO] [bot] - Request: LIMIT SELL | BTCUSDT | Qty: 0.001 | Price: 120000.0
+[2026-04-22 17:05:13] [INFO] [bot] - Success: LIMIT SELL | BTCUSDT | Order ID: 4589215002 | Status: NEW
